@@ -1,0 +1,48 @@
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoIcon {
+  width: 36px;
+  height: 13px;
+  fill: var(--orange-dark);
+  transition: fill 0.3s ease;
+
+  @media screen and (min-width: 376px) {
+    width: 44px;
+    height: 17px;
+  }
+}
+
+.logoIconError {
+  width: 36px;
+  height: 13px;
+  fill: var(--white);
+  transition: fill 0.3s ease;
+  z-index: 10;
+
+  @media screen and (min-width: 376px) {
+    width: 44px;
+    height: 17px;
+  }
+}
+
+.logoText {
+  width: 82px;
+  height: 13px;
+  fill: var(--white);
+  transition: fill 0.3s ease;
+  z-index: 10;
+
+  @media screen and (min-width: 376px) {
+    width: 100px;
+    height: 16px;
+  }
+}
+
+.logoWrap:hover .logoIcon,
+.logoWrap:hover .logoText {
+  fill: var(--gray-light);
+}

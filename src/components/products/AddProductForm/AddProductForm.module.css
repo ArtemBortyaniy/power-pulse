@@ -1,0 +1,111 @@
+.inputModalBox {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 16px;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.modalInputcall {
+  background-color: inherit;
+  border-radius: 12px;
+  border: 1px solid var(--orange-dark);
+  padding: 8px;
+  color: var(--white);
+  width: 100%;
+  margin-bottom: 16px;
+  outline: none;
+
+  @media screen and (min-width: 768px) {
+    max-width: 155px;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.buttonModalBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    margin-top: 64px;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.closeModalButton {
+  align-items: center;
+  width: 121px;
+  height: 42px;
+  background-color: #10100f;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.12;
+  border-radius: 12px;
+  border: 1px solid #505050;
+  outline: none;
+
+  @media screen and (min-width: 768px) {
+    height: 52px;
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.modalInput {
+  background-color: inherit;
+  border-radius: 12px;
+  border: 1px solid var(--orange-dark);
+  padding: 8px;
+  color: var(--white);
+  width: 100%;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+.modalInput:disabled {
+  color: var(--grayMiddle);
+  outline: none;
+}
+
+.toolTipWeigth {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-100%);
+
+  font-size: 12px;
+  line-height: 18px;
+
+  color: var(--grayEx);
+}
+
+.inputWeigthBox {
+  position: relative;
+}
+
+.warning {
+  position: absolute;
+  top: 138px;
+  right: 24px;
+  color: red;
+  font-size: 12px;
+  line-height: 1.2;
+  @media screen and (min-width: 768px) {
+    top: 86px;
+  }
+}

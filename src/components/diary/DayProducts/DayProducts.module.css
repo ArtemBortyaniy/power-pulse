@@ -1,0 +1,82 @@
+.dayProductsWrapper {
+  border-radius: 12px;
+  border: 1px solid rgba(239, 237, 232, 0.2);
+  background-color: rgba(239, 237, 232, 0.05);
+  padding-top: 16px;
+  padding-right: 7px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  width: 335px;
+  height: 880px;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnWrapper {
+  display: flex;
+  align-items: center;
+}
+.title {
+  color: rgba(239, 237, 232, 0.5);
+  font-size: 14px;
+  line-height: 1.2;
+}
+.addProductBtn {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.28;
+  background: transparent;
+  display: flex;
+
+  align-items: center;
+  padding-right: 10px;
+  border: none;
+  color: #efede8;
+}
+.link {
+  color: #efede8;
+  margin-right: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.28; /* 128.571% */
+  transition: all 0.1s linear;
+}
+.addProductBtn:hover .link {
+    color: #e6533c;
+}
+@media screen and (min-width: 768px) {
+  .link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.svg {
+  fill: var(--orange-dark);
+  stroke: var(--orange-dark);
+}
+
+.lin
+
+.errNotFound {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .dayProductsWrapper {
+    height: 234px;
+
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .dayProductsWrapper {
+    height: 234px;
+
+    width: 826px;
+  }
+}

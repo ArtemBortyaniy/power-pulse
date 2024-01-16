@@ -1,0 +1,89 @@
+.title {
+  color: inherit;
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.16;
+  @media screen and (min-width: 768px) {
+    margin-top: 72px;
+    font-size: 32px;
+    line-height: 1.37;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 12px;
+  }
+}
+
+.react-select__control:hover {
+  border-color: var(--grayMiddle);
+}
+
+.productsSection {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+
+  display: block;
+  margin: 0 auto;
+  width: 375px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 48px;
+    display: block;
+    margin: 0 auto;
+    align-content: center;
+    align-items: center;
+
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+    margin: 0 auto;
+
+    padding-left: 96px;
+    padding-right: 0px;
+    padding-bottom: 81px;
+    min-height: 716px;
+    width: 1440px;
+    max-width: 1440px;
+  }
+}
+
+.background {
+  @media screen and (min-width: 1440px) {
+    background-image: url(src/assets/products-desk.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+
+.toolTip {
+  display: none;
+  @media screen and (min-width: 1440px) {
+    display: block;
+    padding-top: 42px;
+    margin-left: calc(100% - 142px);
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--grayToolTip);
+  }
+}
+
+.titleSearchBox {
+  display: block;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 96px;
+  }
+}

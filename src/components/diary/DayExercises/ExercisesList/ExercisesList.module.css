@@ -1,0 +1,209 @@
+.wrapper {
+  margin-top: 22px;
+  gap: 40px;
+  overflow-y: auto;
+  height: 810px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    max-height: 170px;
+    margin-top: 19px;
+    gap: 8px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    gap: 8px;
+    margin-top: 19px;
+  }
+}
+
+/* Стили для скроллбара вебкита (Chrome, Safari) */
+.wrapper::-webkit-scrollbar {
+  margin-right: -12px; /* Отступ влево */
+  width: 6px; /* Ширина скроллбара */
+}
+
+.wrapper::-webkit-scrollbar-track {
+  background-color: transparent; /* Цвет фона трека скроллбара */
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(239, 237, 232, 0.1); /* Цвет ползунка скроллбара */
+
+  border-radius: 12px; /* Закругление углов ползунка */
+}
+
+.wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Цвет ползунка при наведении */
+}
+
+.wrapperListContainer:last-child {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapperListContainer {
+    margin-left: 16px;
+  }
+}
+.wrapperList {
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .wrapperList {
+    gap: 8px;
+  }
+}
+
+.title {
+  color: var(--orange-light);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.text {
+  border: 1px solid var(--gray-middle);
+  padding-left: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flex {
+  /* display: flex; */
+  align-items: center;
+}
+
+.btnDelete {
+  background-color: inherit;
+  border: none;
+}
+.svg {
+  stroke: var(--orange-light);
+  transition: stroke 0.1s linear;
+}
+.svg:hover {
+  stroke: var(--white);
+}
+.wrapperBodyPart {
+  width: 297px;
+}
+@media screen and (min-width: 768px) {
+  .wrapperBodyPart {
+    width: 90px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .wrapperBodyPart {
+    width: 115px;
+  }
+}
+
+.wrapperEquipment {
+  width: 297px;
+}
+@media screen and (min-width: 768px) {
+  .wrapperEquipment {
+    width: 132px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .wrapperEquipment {
+    width: 157px;
+  }
+}
+
+.wrapeerName {
+  width: 297px;
+}
+@media screen and (min-width: 768px) {
+  .wrapeerName {
+    width: 128px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .wrapeerName {
+    width: 131px;
+  }
+}
+
+.wrapperTarget {
+  width: 81px;
+}
+@media screen and (min-width: 768px) {
+  .wrapperTarget {
+    width: 84px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .wrapperTarget {
+    width: 106px;
+  }
+}
+
+.wrapperBurnedCalories {
+  width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (min-width: 768px) {
+  .wrapperBurnedCalories {
+    width: 78px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .wrapperBurnedCalories {
+    width: 91px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.withTime {
+  width: 76px;
+}
+
+@media screen and (min-width: 768px) {
+  .withTime {
+    width: 72px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .withTime {
+    width: 82px;
+    margin-right: 16px;
+  }
+}
+
+.containerError {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.containerError span {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--gray-middle);
+}
